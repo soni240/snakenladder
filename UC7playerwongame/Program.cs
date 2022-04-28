@@ -1,4 +1,4 @@
-﻿
+﻿// See https://aka.ms/new-console-template for more information
 
 static void Main(string[] args)
 {
@@ -51,10 +51,6 @@ static void Main(string[] args)
             {
                 if (list[index] == "Ladder") playerPos1 += rollDice;
             }
-
-
-
-            //If after rolling dice player reached "Exactly 100" then it will increment and come out of loop.Winner is Player 1
             if (list[index] == "Ladder" && (playerPos1 + rollDice == 100) && playerChange == 1)
             {
                 playerPos1 += rollDice;
@@ -127,5 +123,8 @@ static void Main(string[] args)
         Console.WriteLine("Final position of player 1  :" + playerPos1);
     }
     //Total Number of game played
+    Console.WriteLine("Number of times game played :" + count);
 }
-Console.WriteLine("Number of times game played :" + count);
+
+    }
+}
